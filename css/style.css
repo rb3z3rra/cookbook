@@ -17,8 +17,6 @@ header {
     justify-content: space-around;
     padding: 1.5rem;
     margin-bottom: 15px;
-
-    border: 2px solid black;
 }
 
 .logo {
@@ -28,8 +26,6 @@ header {
 .logo img {
     width: 100%;
     border-radius: 50%;
-
-    border: 2px solid black;
 }
 
 h1,
@@ -70,33 +66,61 @@ a:hover {
     border-color: var(--elements-background);
 }
 
-#search {
-    margin: 0 auto;
-    border-radius: 1px;
-    width: 50%;
+
+#input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+#input-text{
+    width: 50vw;
+    margin: auto;
 }
 
 #container {
     display: flex;
-    padding: 0.5rem;
-    border: 1px solid black;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+label{
+    display: block;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 90%;
+  min-height: 2em;
 }
 
 #cards {
     display: flex;
     flex-direction: column;
-    width: 50em;
-    border: 1px solid black;
-    margin: 3rem;
+    width: 75vw;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .post {
-    border: 1px solid black;
-    margin: 0.8vh;
-    width: 70%;
+    margin: 1vh;
+    width: 50%;
 }
 
 .post>figure {
@@ -111,17 +135,60 @@ a:hover {
     font-size: 0.8em;
 }
 
-p {
+.post p {
     text-align: justify;
     color: var(--font-text);
     font-weight: 700;
 }
 
-table, th, td, tr{
+table,
+th,
+td,
+tr {
     border: 1px solid black;
 }
 
-footer{
-    border: 1px solid black;
+footer {
+    background-color: var(--section-background);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+#rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+p {
+    display: inline;
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nome-msg {
+        visibility: hidden;
+    }
+
+    #container {
+        justify-content: center;
+    }
+
+    #cards {
+        width: 100%;
+    }
 
 }

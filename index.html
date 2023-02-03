@@ -41,9 +41,11 @@
     <body>
         <div id="container">
             <main>
-                <section id="search">
-                    <label for="search"><input type="search" id="search" placeholder="Buscar"></label>
-                    <button>Buscar</button>
+                <section id="input">
+                    <form action="/action_page.php">
+                        <input id="input-text" type="text" placeholder="Buscar.." name="search">
+                        <button type="submit">Enviar</button>
+                    </form>
                 </section>
                 <section id="cards">
                     <div class="post">
@@ -158,12 +160,18 @@
         <div class="logo">
             <img src="images/logo.png" alt="logo">
         </div>
-        <div>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-        </div>
-        <div>
+        <div id="rights">
             <h3>@rbezerra - 2023</h3>
+        </div>
+
+
+
+        <div id="social-midia">
+            <i class="bi bi-instagram"></i>
+            <p>rodrigo.bezerra84</p>
+
+            <i class="bi bi-github"></i>
+            <p>rb3z3rra</p>
         </div>
     </footer>
 </body>
