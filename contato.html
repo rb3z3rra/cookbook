@@ -40,7 +40,7 @@
     <main id="container">
         <form action="#">
             <fieldset>
-                <legend>Dados</legend>
+                <legend>Contato</legend>
                 <label for="fname">Primeiro Nome</label>
                 <input type="text" id="fname" name="fname" placeholder="Joao">
                 <label for="lname">Sobrenome</label>
@@ -58,8 +58,12 @@
                     <option value="outro">Outro</option>
                 </select>
                 <h3>Receber Notícias?</h3>
-                <input type="radio" name="noticia" id="sim"><label for="sim">SIM</label>
-                <input type="radio" name="noticia" id="nao"><label for="nao">NÃO</label>
+                <label for="sim"></label>
+                <input type="radio" name="noticia" id="sim" value="SIM" class="news" />SIM
+
+                <label for="nao"></label>
+                <input type="radio" name="noticia" id="nao" value="NAO" class="news" />NÃO
+
             </fieldset>
         </form>
     </main>
@@ -82,4 +86,5 @@
         </div>
     </footer>
 </body>
+
 </html>

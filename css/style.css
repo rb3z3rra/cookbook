@@ -36,6 +36,10 @@ span {
     text-shadow: 1px 1px 8px white;
 }
 
+h3 {
+    margin: 2rem 0;
+}
+
 
 #nome-msg>span>i {
     font-size: 15px;
@@ -67,13 +71,14 @@ a:hover {
 }
 
 
-#input{
+#input {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: auto;
 }
-#input-text{
+
+#input-text {
     width: 50vw;
     margin: auto;
 }
@@ -86,28 +91,42 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
-label{
+label {
     display: block;
+}
+
+.news {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
 
 fieldset {
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
-  }
+}
+
 form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
-  }
-  input,
+}
+
+legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+input,
 textarea,
 select {
-  margin: 10px 0 0 0;
-  width: 90%;
-  min-height: 2em;
+    margin: 0.5rem 0;
+    width: 90%;
+    min-height: 2em;
 }
 
 #cards {
