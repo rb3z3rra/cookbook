@@ -141,6 +141,8 @@ select {
 .post {
     margin: 1vh;
     width: 50%;
+    border: 1px solid var(--section-background);
+    box-shadow: 2px 2px 8px var(--elements-background);
 }
 
 .post>figure {
