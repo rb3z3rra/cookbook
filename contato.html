@@ -38,33 +38,36 @@
         </div>
     </header>
     <main id="container">
+        <section id="mensagem"></section>
         <form action="#">
             <fieldset>
                 <legend>Contato</legend>
                 <label for="fname">Primeiro Nome</label>
-                <input type="text" id="fname" name="fname" placeholder="Joao">
+                <input type="text" id="fname" name="fname" placeholder="Joao" class="input-contato">
                 <label for="lname">Sobrenome</label>
-                <input type="text" id="lname" name="lname" placeholder="Silva">
+                <input type="text" id="lname" name="lname" placeholder="Silva" class="input-contato">
                 <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" placeholder="joaosilva@email.com">
+                <input type="email" id="email" name="email" placeholder="joaosilva@email.com" class="input-contato">
                 <label for="assunto">Assunto</label>
-                <input type="text" id="assunto" name="assunto" placeholder="Eu desejo...">
+                <input type="text" id="assunto" name="assunto" placeholder="Eu desejo..." class="input-contato">
                 <label for="msg">Sua Mensagem</label>
-                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                <textarea name="msg" id="msg" cols="30" rows="10" class="input-contato"></textarea>
                 <label for="sexo">Sexo</label>
-                <select name="sexo" id="sexo">
+                <select name="sexo" id="sexo" >
                     <option value="homem">Homem</option>
                     <option value="mulher">Mulher</option>
                     <option value="outro">Outro</option>
                 </select>
                 <h3>Receber Notícias?</h3>
                 <label for="sim"></label>
-                <input type="radio" name="noticia" id="sim" value="SIM" class="news" />SIM
+                <input type="radio" name="noticia" id="sim" value="SIM" class="news" checked/>SIM
 
                 <label for="nao"></label>
                 <input type="radio" name="noticia" id="nao" value="NAO" class="news" />NÃO
 
             </fieldset>
+
+            <input id="btn-contato" type="submit" value="Enviar"/>
         </form>
     </main>
     <footer>
@@ -85,6 +88,7 @@
             <p>rb3z3rra</p>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
