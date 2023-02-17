@@ -149,6 +149,18 @@ input[type="submit"] {
     margin-bottom: 0.5rem;
 }
 
+.joinha{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+}
+
+.joinha p{
+    font-size: 35px;
+    margin-left: 1rem;
+}
+
 .post {
     margin: 1vh;
     width: 50%;
@@ -227,18 +239,38 @@ p {
 }
 
 
-.msg-enviada-ok{
+.msg-enviada-ok {
     display: flex;
-    position: relative;
     justify-content: center;
-    margin: 0;
+    position: relative;
+    margin: auto;
     margin: 2rem;
+    width: 50%;
+    box-shadow: 10px 10px 20px var(--elements-background);
     background-color: #94f1aa;
     color: #155e41;
     padding: 3rem;
     text-align: center;
+    border-radius: 20px;
+    z-index: 999;
+
+}
+
+
+
+.msg-nao-enviada {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    margin: 2rem;
+    background-color: #F8D7DA;
+    color: #A12B24;
+    padding: 3rem;
+    text-align: center;
     width: 50%;
     border-radius: 20px;
-   box-shadow: 10px 10px 20px var(--elements-background);
+    box-shadow: 10px 10px 20px var(--elements-background);
+    z-index: 999;
 
 }
