@@ -106,7 +106,7 @@ fieldset {
     border-bottom: 3px solid #3b3b4f;
 }
 
-form {
+#contato {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;

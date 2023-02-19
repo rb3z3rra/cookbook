@@ -19,6 +19,7 @@ let btn = document.querySelector('#btn-contato');
 
 
 btn.addEventListener('click', (event) => {
+    window.scrollTo(0, 0);
 
     if(validaCampos(campos)){
         const msg = document.getElementById('mensagem');
